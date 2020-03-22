@@ -47,7 +47,7 @@ args:
 	insert("[]") 
 	key(left)
 block: 
-	insert("{}") 
+	insert("{{}}")
 	key(left enter enter up tab)
 empty array: "[]"
 comment see: "// "
@@ -103,5 +103,5 @@ wipe: key(backspace)
 (pad | padding): 
 	insert("  ") 
 	key(left)
-funny: "ha ha"
+#funny: "ha ha"
 #menu: key(alt)
