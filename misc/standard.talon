@@ -1,5 +1,5 @@
 dragon words: "<dgnwords>"
-dragon dictation: "<dgndictation>"
+dragon dictation: "<phrase>"
 slap: key(home enter)
 cd: "cd "
 #cd talon home: "cd {}\n".format(TALON_HOME),
@@ -89,6 +89,7 @@ zoom out: edit.zoom_out()
 copy: edit.copy()
 cut: edit.cut()
 paste: edit.paste()
+save: edit.save()
 #menu help: key(F1)
 #spotlight: key(super)
 (undo | under | skunks): edit.undo()
