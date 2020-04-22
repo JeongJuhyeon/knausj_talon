@@ -66,8 +66,8 @@ def key(m) -> str:
 ctx = Context()
 ctx.lists['self.modifier'] = {
     'command': 'cmd',
-    'control': 'ctrl',   'troll':   'ctrl',
-    'shift':   'shift',  'sky':     'shift',
+    'control': 'ctrl',   #'troll':   'ctrl',
+    'shift':   'shift',  #'sky':     'shift',
     'alt':     'alt',    'option':  'alt',
     'super':   'super',
 }
@@ -172,7 +172,7 @@ def key(m) -> str:
 
 @ctx.capture(rule='{self.letter}+')
 def letters(m):
-    return m.letter
+    return m.letter_list
 
 @mod.action_class
 class Actions:
