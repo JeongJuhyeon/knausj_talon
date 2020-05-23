@@ -66,17 +66,17 @@ action(user.ide_parameter_hints):
 action(user.ide_done):
   key(tab)
 
-action(user.ide_show_explorer):
+action(user.ide_toggle_project):
   key(ctrl-shift-e)
 
-action(user.ide_show_search):
+action(user.ide_find_everywhere):
   key(ctrl-shift-f)
 
-action(user.ide_show_source_control):
+action(user.ide_toggle_source_control):
   key(ctrl-shift-g)
 
-action(user.ide_show_debug):
+action(user.ide_toggle_debug):
   key(ctrl-shift-d)
 
-action(user.ide_show_extensions):
+action(user.ide_toggle_extensions):
   key(ctrl-shift-x)

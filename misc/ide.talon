@@ -3,6 +3,17 @@ app: /jetbrains/
 app: IntelliJ IDEA
 app: PyCharm
 app: PyCharm64.exe
+app: Eclipse
+
+os: linux
+app: Code
+
+os: mac
+app: Code
+
+os: windows
+app: Visual Studio Code
+app: Code.exe
 
 # When tags are supported
 #tags: ide
@@ -14,6 +25,7 @@ perfect: user.ide_perfect()
 smart: user.ide_smart()
 done: user.ide_done()
 finish: user.ide_done()
+comment: user.ide_toggle_comment()
 
 extract variable: user.ide_extract_variable()
 extract field: user.ide_extract_field()
@@ -120,6 +132,8 @@ toggle to do: user.ide_toggle_to_do()
 toggle docker: user.ide_toggle_docker()
 toggle favorites: user.ide_toggle_favorites()
 toggle last: user.ide_toggle_last()
+toggle source control: user.ide_show_source_control()
+toggle extensions: user.ide_show_extensions()
 # Pin/dock/float
 toggle pinned: user.ide_toggle_pinned()
 toggle docked: user.ide_toggle_docked()
@@ -215,3 +229,12 @@ select less:
 
 select (more|this):
 	user.ide_select_more()
+
+terminal new: user.ide_terminal_new()
+terminal next: user.ide_terminal_focus_next()
+terminal trash: user.ide_terminal_trash()
+terminal last: user.ide_terminal_focus_previous()
+terminal up: user.ide_terminal_scroll_up()
+terminal down: user.ide_terminal_scroll_down()
+
+# code arguments: user.ide_parameter_hints()
